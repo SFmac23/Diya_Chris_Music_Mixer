@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC MIXER</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body">
+
+    <h1 class="heading">This is Music Mixer</h1>
+    <p>Drag and drop your fav sounds to create your own mix</p>
+
+    <div 
+        id="drop-zone1" 
+        class="drop-box"
+        ondragstart="dragStart(event)"
+        ondragover="dragOverHandler(event)"
+        ondrop="dropHandler(event)"
+    > <p>Drop Song 1 here</p> </div>
+
+    <div 
+        id="drop-zone2" 
+        class="drop-box"
+        ondragstart="dragStart(event)"
+        ondragover="dragOverHandler(event)"
+        ondrop="dropHandler(event)"
+    > <p>Drop Song 2 here</p> </div>
+    
+    <h3>Song 1</h3>
+    <audio controls id="audio1"></audio>
+    
+    <h3>Song 2</h3>
+    <audio controls id="audio2"></audio>
+
+     <script src="js/script.js"></script> 
+</body>
+</html>
