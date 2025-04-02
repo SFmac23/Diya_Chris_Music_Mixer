@@ -1,26 +1,48 @@
 .heading {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 .heading:hover {
-    color: red;
+                                        
+    color: azure;
 }
 
 .body {
-    background-color: blue;
+    background-image: url('../images/BG_IMG.jpg');
+    background-size: cover;
+}
+
+#container
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
 
 .drop-box {
-    width: 300px;
-    height: 200px;
+    width: 15%;
+    height: 100px;
     border: 2px dashed #aaa;
-    margin: 20px auto;
+    margin: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(208, 183, 226);
 }
+
+.playbutton {
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+.head {
+    color: white;
+}
+
 
 .drop-box:hover {
     color: red;
