@@ -9,8 +9,9 @@
 <body class="body">
 
     <h1 class="heading">This is Music Mixer</h1>
-    <p>Drag and drop your fav sounds to create your own mix</p>
+    <p class="heading">Drag and drop your fav sounds to create your own mix</p>
 
+    <div id="container">
     <div 
         id="drop-zone1" 
         class="drop-box"
@@ -26,12 +27,14 @@
         ondragover="dragOverHandler(event)"
         ondrop="dropHandler(event)"
     > <p>Drop Song 2 here</p> </div>
-    
-    <h3>Song 1</h3>
+    </div>
+    <div id="playbutton" class="Play-button">
+    <h3 class="head">Song 1</h3>
     <audio controls id="audio1"></audio>
     
-    <h3>Song 2</h3>
+    <h3 class="head">Song 2</h3>
     <audio controls id="audio2"></audio>
+</div>
 
      <script src="js/script.js"></script> 
 </body>
